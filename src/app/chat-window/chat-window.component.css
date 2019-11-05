@@ -1,0 +1,12 @@
+.chat-window {
+    @extend .col-xs-10, .col-sm-5;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    float: right;
+    margin-left: 10px;
+}
+
+.hide-chat-window{
+    visibility: hidden;
+}
