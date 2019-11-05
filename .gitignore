@@ -3,7 +3,7 @@
 # compiled output
 /dist
 /tmp
-/src/environments/
+/src/environments
 # dependencies
 /node_modules
 
