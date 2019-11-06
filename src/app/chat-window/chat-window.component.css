@@ -10,3 +10,19 @@
 .hide-chat-window{
     visibility: hidden;
 }
+
+.chatbutton{
+    position: fixed; 
+    bottom:0;
+    right:0;  
+}
+
+.panel-container {
+    position: fixed;
+    bottom:0;
+    right:50px;
+   width: 500px;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 70px;
+}

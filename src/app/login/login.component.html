@@ -1,8 +1,20 @@
-<p>
-  login works!
-</p>
-<div>
-  <input  type = "text" [(ngModel)] = 'email'><br>
-  <input  type = "password" [(ngModel)] = 'password'>  <br>
-  <button (click)=login()>Submit</button>
+
+<div class="form">
+
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+        
+        </div>
+        <input type="text" class="form-control" placeholder="email" aria-label="Username" aria-describedby="basic-addon1" [(ngModel)] = 'email'>
+      </div>
+
+      <div class="input-group mb-3">
+          <div class="input-group-prepend">
+           
+          </div>
+          <input type="password" class="form-control" placeholder="password" aria-label="password" aria-describedby="basic-addon1" [(ngModel)] = 'password'>
+        </div>
+
+
+  <button class="btn btn-dark" type="button" (click)=login()>Submit</button>
 </div>

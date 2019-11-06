@@ -30,6 +30,7 @@ export class FirebaseauthService {
 
   setAuthState(state : boolean){
     this.loggedin = state;
+    
   }
 
   getAuthState(){
