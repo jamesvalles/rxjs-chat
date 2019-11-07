@@ -8,7 +8,7 @@ import {AuthGuard} from '../app/auth.guard';
 
 const routes: Routes =[ 
   {path:'chat', component: ChatPageComponent, canActivate:[AuthGuard]}, 
-  {path:'', component:LoginComponent}
+  {path:'**', component:LoginComponent}
 ];
 
 
