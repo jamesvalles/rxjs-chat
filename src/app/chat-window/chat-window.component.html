@@ -1,6 +1,8 @@
 <div class="chat-window-container">
-    <div class="chatbutton"><button class="btn btn-danger" (click)="toggleChatWindow()">CHAT</button></div>
-  <div [ngClass]="{
+    <div class="chatbutton">
+        <a (click)="toggleChatWindow()"> <img src="src/icon.png"/></a>
+     
+        <div [ngClass]="{
         'chat-window': toggleWindow,
         'hide-chat-window': !toggleWindow
       }">
