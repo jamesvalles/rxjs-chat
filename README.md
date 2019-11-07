@@ -15,3 +15,4 @@ Added alert message that displays actual firebase error messages when login unsu
 Styled the homepage and added bootstrap buttons and text field. 
 
 Added logout button (but ran out of time to wire it up)
+

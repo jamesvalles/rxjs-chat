@@ -19,7 +19,7 @@ export class AuthGuard implements CanActivate {
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
     
       this.loggedin = this._fbservice.getAuthState(); 
-      if(true){
+      if(this.loggedin){
       return true; 
     }else{
       alert("You don't have permission to view this page.");
