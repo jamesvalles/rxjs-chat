@@ -8,13 +8,16 @@ import {AuthGuard} from '../app/auth.guard';
 
 const routes: Routes =[ 
   {path:'chat', component: ChatPageComponent, canActivate:[AuthGuard]}, 
-  {path:'**', component:LoginComponent}
+  {path:'login', component:LoginComponent},
+  { path: '', redirectTo: 'login', pathMatch: 'full' },
+  { path: '**', redirectTo: 'login', pathMatch: 'full' }
 ];
 
 
 @NgModule({
-  imports:[RouterModule.forRoot(routes)],
+  imports:[RouterModule.forRoot(routes, {useHash: true})],
   exports:[RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule { 
+}
 export const routingComponents = [ChatPageComponent, LoginComponent]
